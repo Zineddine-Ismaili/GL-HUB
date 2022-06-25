@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tp_android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Tp_android">
+        <activity android:name=".AddPdfActivity"></activity>
+        <activity android:name=".UpdateEtudiantActivity" />
+        <activity android:name=".EtudiantDetailsActivity" />
+        <activity android:name=".addEtudiantActivity" />
+        <activity android:name=".ListEtudiantActivity" />
+        <activity android:name=".UpdateProfActivity" />
+        <activity android:name=".AddProfActivity" />
+        <activity android:name=".professeurDetails" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.Tp_android.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.Tp_android.NoActionBar" />
+        <activity
+            android:name=".ListeProfesseursActivity"
+            android:label="@string/title_activity_liste_professeurs"
+            android:theme="@style/Theme.Tp_android.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

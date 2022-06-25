@@ -1,0 +1,2 @@
+rootProject.name = "Ratt_android"
+include ':app'
